@@ -15,8 +15,7 @@ public class BotService {
 
     public SendMessage register(String chatId) {
         SendMessage sendMessage = new SendMessage(
-                chatId, "Please share your number"
-        );
+                chatId, "Please share your number" );
         sendMessage.setReplyMarkup(shareContact());
         return sendMessage;
 
