@@ -18,7 +18,6 @@ public class BotService {
                 chatId, "Please share your number"
         );
         sendMessage.setReplyMarkup(shareContact());
-
         return sendMessage;
 
     }
