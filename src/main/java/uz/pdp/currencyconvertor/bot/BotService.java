@@ -20,7 +20,6 @@ public class BotService {
         );
         sendMessage.setReplyMarkup(shareContact());
 
-
         return sendMessage;
 
     }
