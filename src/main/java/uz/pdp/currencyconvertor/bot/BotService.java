@@ -69,7 +69,6 @@ public class BotService {
         KeyboardButton button = new KeyboardButton("Share number");
         button.setRequestContact(true);
         row.add(button);
-
         replyKeyboardMarkup.setKeyboard(List.of(row));
         return replyKeyboardMarkup;
     }
