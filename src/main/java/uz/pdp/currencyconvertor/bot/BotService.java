@@ -60,7 +60,6 @@ public class BotService {
         return sendMessage;
     }
 
-
     public ReplyKeyboardMarkup shareContact() {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         replyKeyboardMarkup.setResizeKeyboard(true);
