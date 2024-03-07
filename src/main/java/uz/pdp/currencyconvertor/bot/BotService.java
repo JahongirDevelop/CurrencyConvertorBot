@@ -53,7 +53,6 @@ public class BotService {
                 toUZS = false;
             }
         }
-
         String text = currencyService.convert(code, toUZS, amount);
         SendMessage sendMessage = new SendMessage(chatId, text);
         sendMessage.setReplyMarkup(menuButtons());
