@@ -23,7 +23,6 @@ public class BotService {
         sendMessage.setReplyMarkup(menuButtons());
         return sendMessage;
     }
-
     public SendMessage enterAmount(String chatId) {
         SendMessage sendMessage = new SendMessage(chatId, "Enter amount");
         sendMessage.setReplyMarkup(replyKeyboardRemove());
