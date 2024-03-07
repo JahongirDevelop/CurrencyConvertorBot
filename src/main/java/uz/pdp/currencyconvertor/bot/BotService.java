@@ -8,7 +8,6 @@ import uz.pdp.currencyconvertor.model.UserState;
 import uz.pdp.currencyconvertor.service.CurrencyService;
 import java.util.ArrayList;
 import java.util.List;
-
 public class BotService {
     CurrencyService currencyService = new CurrencyService();
 
