@@ -17,12 +17,14 @@ public class CurrencyConvertorBot extends TelegramLongPollingBot {
     UserService userService = new UserService();
     @Override
     public String getBotUsername() {
-        return "http://t.me/currency_convert0r_bot";
+        return "YourBotUsername"; // Update with your bot's username
+
     }
 
     @Override
     public String getBotToken() {
-        return "6280123403:AAGnRCVQ7ZWlUibIg-DqOU0aY6yzLBfybjc";
+        return System.getenv("BOT_TOKEN"); // Use environment variable for token
+
     }
 
     @SneakyThrows
@@ -98,10 +100,10 @@ public class CurrencyConvertorBot extends TelegramLongPollingBot {
 
         Chat chat = message.getChat();
         String userPhoneNumber = message.getContact().getPhoneNumber();
-        System.out.println("chat.getFirstName() = " + chat.getFirstName());
+        /*System.out.println("chat.getFirstName() = " + chat.getFirstName());
         System.out.println("chat.getUserName() = " + chat.getUserName());
         System.out.println("chat.getId() = " + chat.getId());
-        System.out.println("userPhoneNumber = " + userPhoneNumber);
+        System.out.println("userPhoneNumber = " + userPhoneNumber);*/
 
         logger.log(Level.INFO,chat.getFirstName()+" entered , message : " + text);
 
