@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class ConvertorRepository {
 
-    static String convertorPath = "D:\\Users\\HP\\java G23\\TelegramBot\\src\\main\\resources\\convertor.json";
+    static String convertorPath = "YOUR_LOCAL_STORAGE/src/main/resources/convertor.json"; // Relative path
     static ObjectMapper objectMapper = new ObjectMapper()
             .enable(SerializationFeature.INDENT_OUTPUT)
             .enable(SerializationFeature.WRITE_ENUMS_USING_TO_STRING)
